@@ -380,7 +380,7 @@ h1, h2, h3, h4, h5, h6, figure {
 
 		}
 	}
-	.overlay {
+	.gradient-overlay {
 		position: absolute;
 		top: 0;
 		left: 0;
@@ -390,7 +390,7 @@ h1, h2, h3, h4, h5, h6, figure {
 		@include transition(.5s);
 	}
 	&:hover {
-		.overlay {
+		.gradient-overlay {
 			background: rgba(0, 0, 0, .7);		
 		}
 		a {
@@ -413,7 +413,7 @@ h1, h2, h3, h4, h5, h6, figure {
 		heifght: inherit;
 		padding: 3em 0;
 	}
-	.overlay{
+	.gradient-overlay{
 		position: absolute;
 		top: 0;
 		bottom: 0;
@@ -916,7 +916,7 @@ h1, h2, h3, h4, h5, h6, figure {
 	background-size: cover;
 	background-attachment: fixed;
 	background-position: center center;
-	.overlay {
+	.gradient-overlay {
 		z-index: 0;
 		position: absolute;
 		bottom: 0;
@@ -1037,7 +1037,7 @@ article{
 	background-size: cover;
 	background-attachment: fixed;
 	background-position: center center;
-	.overlay {
+	.gradient-overlay {
 		z-index: 0;
 		position: absolute;
 		bottom: 0;
