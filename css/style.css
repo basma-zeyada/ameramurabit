@@ -725,8 +725,10 @@ article {
       font-size: 12px; }
 
 .pricing {
+  position: relative;
+  display: inline-grid;
   background: #fff;
-  padding: 2em 1em 1em 1em;
+  padding: 1em 1em 1em 1em;
   -webkit-box-shadow: 0px 3px 38px -13px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0px 3px 38px -13px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 3px 38px -13px rgba(0, 0, 0, 0.2);
@@ -739,7 +741,7 @@ article {
   -ms-border-radius: 4px;
   border-radius: 4px; }
   .pricing .pricing-heading {
-    margin-bottom: 30px; }
+    margin-bottom: 0px; }
   .pricing .price {
     font-size: 72px;
     color: #4aca85;
@@ -753,7 +755,35 @@ article {
       font-size: 13px;
       display: block;
       color: #888f94; }
-
+    .pricing .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to right top, rgba(109, 50, 124, 0.9), rgba(72, 93, 166, 0.9), rgba(0, 161, 186, 0.1), rgba(0, 191, 152, 0.1), rgba(54, 196, 134, 0.1));
+      transition: ease-in-out all 0.3s;
+    }
+    .pricing:hover .overlay{
+      transition: ease-in-out all 0.3s;
+    }
+    .pricing .team-info{
+      position: absolute;
+      width: calc(100% - 2em);
+      text-align: center;
+      color: #fff !important;
+      bottom: 1em;
+      background-color: rgba(0, 0, 0, 0.3);
+      margin: 0 1em;
+      
+    }
+    .pricing .team-info h2{
+      color: #fff !important;
+    }
+    .pricing .team-info ~ img{
+      height: 300px;
+      width:200px;
+    }
 #colorlib-subscribe {
   position: relative; }
 
@@ -1503,3 +1533,43 @@ blockquote footer, blockquote small, blockquote .small {
   margin-top: 20px;
 }
 /* End  Testimonials section */
+
+.affiliations{
+  background: url(../images/affiliations/affiliations.png) center center no-repeat;
+  height: 600px;
+  background-size: 100%;
+}
+
+@media all and (max-width:580px){
+  .video-hero blockquote {
+    padding: 10px 0;
+  }
+  .video-hero .display-tc p {
+    font-size: 18px;
+  }
+  .colorlib-featured .featured-wrap {
+    margin-top: 0em;
+  }
+  .colorlib-work-featured .mobile-wrap .mobile-img {
+    height: 400px;
+  }
+  .colorlib-about, .colorlib-shop, .colorlib-work, .colorlib-work-featured, .colorlib-intro, #colorlib-subscribe, .colorlib-pricing, .colorlib-services, #colorlib-contact, .colorlib-blog {
+    padding: 2em 0;
+  }
+  .colorlib-work-featured .mobile-wrap {
+    margin-bottom: 0em;
+  }
+  .affiliations {
+    height: 200px;
+  }
+  .qbstp-header-subscribe #email, .qbstp-header-subscribe button {
+    font-size: 12px !important;
+  }
+  .qbstp-header-subscribe .form-control, .qbstp-header-subscribe button {
+    border-radius: 30px !important;
+  }
+  .qbstp-header-subscribe .col-three-forth, .qbstp-header-subscribe .col-one-third {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+}
